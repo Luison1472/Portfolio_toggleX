@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "GmarketSansMedium", "Arial Narrow", Arial, sans-serif;
+  font-size: small;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1200px;
+}
