@@ -559,121 +559,6 @@ const getAuthHandler = http.get('/api/auth', async () => {
          </div>
 
 
-         {/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-         
-         <div className="mt-20 mb-2 text-left border-b-4 border-gray-400 border-dashed">
-                <p className="inline-block font-bold pb-3 text-2xl">Mini Project 3</p>
-           <div className="flex md:flex items-start">
-            <h2 className="text-xl font-semibold mt-4 mb-3">ToDoList&Calendar / 투두&캘린더</h2>
-            <div className="bg-green-500 ml-3 mt-4 md:ml-5 px-3 pt-1 rounded-xl text-white line">미니</div>
-           </div>
-           
-             <div className="flex flex-col md:flex-row mb-5">
-               <img className="w-full md:w-52 h-auto rounded-xl shadow-neutral mr-5 mb-5 md:mb-0" src="/img/TodoList_Calendar.png" alt="같이가요 플젝 이미지" />
-
-               <div className="flex flex-col justify-between">
-                 <ul className="border-l-4 border-black">
-                   <li className="ml-5 font-extrabold text-xl">프로젝트 간략한 설명</li>
-                 <li className="ml-5 mb-5">토이프로젝트로 자주 사용하는 ToDo-List와 Calendar를 합쳐보고 싶어 진행한 프로젝트입니다.</li>
-                   
-                   <li className="ml-5 font-extrabold text-xl">프로젝트 기간</li>
-                   <li className="ml-5 mb-5">2024.09.03 ~ 2024.09.10</li>
-                   <li className="ml-5 font-extrabold text-xl">팀 구성</li>
-                   <li className="ml-5">개인프로젝트</li>
-                 </ul>
-                </div>
-             </div>
-            <div className="mb-5">
-             <h3 className="font-bold text-lg">My Part</h3>
-             <ul className="ml-5 list-disc">
-               <li className="font-bold"></li>
-               <p className="ml-5">- 백엔드 없이 1인 개발을 위해 Fire-Base 서비스를 사용 / 협업 전 RESTful Method에 관한 공부를 할 수 있었음</p>
-               <li className="font-bold">HTML 5 와 JavaScript, CSS 3, Styled-component를 사용하여 마크업 및 UI 구현</li>
-               <p className="ml-5">- 프론트엔드의 기본 스택을 가지고 개인 프로젝트를 기획 및 개발 함으로서, 기초를 다질 수 있는 기회였음.</p>
-               <li className="font-bold">Context-API를 사용하여 전역 상태 관리</li>
-               <p className="ml-5">- 사용자의 정보를 다른 컴포넌트에서 불러오기 위하여 context-API를 사용함</p>
-               <li className="font-bold">Pagination을 사용하여 여러 게시글들을 효율적으로 관리 할 수 있도록 관리</li>
-               <p className="ml-5">- 무한 스크롤과 Pagination의 차이점을 공부하였으며 InterSection Observer에 대하여도 공부할 수 있었음</p>
-             </ul>
-           </div>
-           <div className="mb-5">
-                <h3 className="font-bold text-lg">Skill</h3>
-         
-               <ul className="flex justify-start flex-wrap gap-4 ml-5 ">
-                            
-                            <li className="animate-fadeIn flex items-center rounded-lg border shadow-lg py-3 px-3 transition-transform duration-600"><img src="/img/react.png" alt="React 아이콘" className="w-10 "/></li>
-                            <li className="animate-fadeIn align-middle flex items-center rounded-lg border shadow-lg py-3 px-3  transition-transform duration-600"><img src="/img/javascript.png" alt="JavaScript 아이콘" className="w-10"/></li>             
-                            <li className="animate-fadeIn flex items-center rounded-lg border shadow-lg py-3 px-3 transition-transform duration-600"><img src="/img/firebase.png" alt="TailwindCSS 아이콘" className="w-10" /></li>
-                            <li className="animate-fadeIn align-middle flex items-center rounded-lg border shadow-lg py-3 px-3  transition-transform duration-600"><img src="/img/styledComponent.jpg" alt="styledComponent 아이콘" className="w-10"/></li>
-                        </ul>
-             
-            </div>
-            
-           <div className="mb-5">
-             
-              <h3 
-                className="font-bold text-lg cursor-pointer flex items-center justify-start gap-5" 
-              
-             >
-               
-                Trouble Shooting         
-              </h3>
-             
-               <div>
-                <div className="mb-10">
-                <p className="font-extrabold text-lg ml-5 mt-2">Problem 1</p>
-                  <p className="ml-5 mt-2">
-                    <span className="font-extrabold">FireBase를 이용해 프로필 이미지 설정 중 오류.</span><br />
-                     - FireBase로 이미지를 저장할 때 MIME 타입 오류가 발생<br />
-                    <span className="ml-2">DataBase로 이미지 파일이 저장되지 않는 오류</span>
-                  </p>
-                  <p className="font-extrabold text-lg ml-5 mt-2">Solve</p>
-                  <ul className="ml-5 mt-2 list-disc">
-                    <li className="font-extrabold list-none">이미지에 MIME 타입을 지정</li>
-                     <li className="ml-5">if 문으로 profilePicture가 있을 시, FireBase만의 DB 이미지 타입을 지정.</li><br />
-                     <li className="ml-5">contentType : profilePictrue.type 으로 지정</li>
-                   </ul>
-                   <div className="mt-1">
-                    <p className="font-extrabold text-lg ml-5">Code</p>
-                    <div className="ml-5 text-white p-1 rounded-lg overflow-auto">
-                      <CodeBlock codeString={YoriJoriString} />
-                    </div>
-                   </div>
-                    <div className="ml-10 font-extrabold ">
-                      <span>-&gt; </span>
-                      <span className="">후에 협업 프로젝트로 API 연동시, Data를 서버에 보낼 땐 multipart-Type 사용한다는 것을 알게 됨</span><br/>
-                    </div>
-                </div>
-                 
-               </div>
-               
-        
-            </div>
-            <div className="mb-5">
-                <h3 className="font-bold text-lg">What I Learn</h3>
-                <ul className="ml-5 list-disc">
-                  <li>이미지를 다룰 땐 MIME 타입 설정의 중요성을 배웠으며, FireBase, 백엔드API와 통신할 땐 정해진 형식을 잘 지켜야 한다는 사실과</li>
-               <li>이미지 파일을 백엔드와 API 통신을 할 때는 multipart-Type을 사용해야 한다는 것도 알게 되었음.</li>
-               <li>아쉬웠던 점으로는, 회원가입에 더 많은 정보들을 formData로 보낼 수 있었다는점과 이메일 인증 등등 다양한 기능이 없다는 점이였음.</li>
-                </ul>
-           </div>
-
-           <div className="flex sm:flex ml-12">
-            <a href="https://github.com/Luison1472/YoriJori" target="_blank" className="mb-5 w-32 flex-col flex ml-2 font-bold text-lg text-blue-500">
-                <img className="w-20 ml-5 mb-2" src="/img/github.png"/>
-                <p>Github Link</p>
-            </a>
-            <a href="https://yori-jori.vercel.app/" target="_blank"
-              className="mb-5 w-40 flex-col flex ml-2 font-bold text-lg text-blue-500">
-                <img className="mt-3 w-16 ml-9 mb-3" src="/img/demo.png"/>
-                <p className="ml-9">DEMO</p>
-            </a>
-           </div>
-           
-         </div>
-
-
-
          {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
          {/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */}   
          
@@ -797,8 +682,7 @@ const getAuthHandler = http.get('/api/auth', async () => {
                  <ul className="ml-5 list-disc">
                    <li>Intersection Observer에 대한 동작원리를 알게 되었음</li>
                    <li>페이지를 넘길 때 사용되는 Pagination과 무한 스크롤의 차이점을 알게 되었고, 어떤 상황에 적합한지 알게 되었음</li>
-                   <li>사용자가 정확한 데이터 위치를 알고 싶을 경우와 자원 사용 최적화, 즉 서버 부하와 클라이언트 측의 자원 사용을 최적화 할 때는 Pagination을 사용하며
-                     <br/> 모바일 사용자를 우선으로 콘텐츠를 탐색하거나 발견하는 것을 목적으로 할 때 Infinite Scroll이 적합하다는 것을 알게 되었음.
+                   <li>보여줘야 하는 데이터가 적을 때는 페이지를 옮길 때마다 DB I/O가 발생하기에 무한 스크롤이 적합하며,<br/>무한 스크롤은 html이 + 되는거기 때문에 무한정 내려갈수는 없기에,<br/> 데이터 양이 많아지면 페이지네이션이 넘어가는게 더 효율적이라는 것을 알게되었습니다.
                    </li>
                  </ul>
              </div>
