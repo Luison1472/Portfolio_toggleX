@@ -90,7 +90,7 @@ const Timeline = () => {
           </div>
         </div>
 
-        <div className="relative flex flex-col mb-28 right-24 items-center ">
+        <div className="relative flex flex-col mb-28 right-14 items-center ">
           <div className="flex flex-col items-center">
             <div className="w-24 h-6 rounded-full bg-purple-500 z-10"></div>
             <div className="mt-2 text-center">
